@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<script>
+
+    //     JavaScript Fundamentals – Part 1
+    // Challenge 1-2
+    // let massM = 95;
+    // let massJ = 85;
+    // let heightM = 1.88;
+    // let heightJ = 1.76;
+    // let BMIm = massM / (heightM * heightM);
+    // let BMIj = massJ / (heightJ * heightJ);
+    // let istrue = BMIm > BMIj;
+
+    // if(istrue)console.log(`Mark has a better BMI (${BMIm})`);
+    // else console.log(`John has a better BMI (${BMIj})`);
+
+
+
+
+
+
+
+    //Challenge 3 :
+
+
+    // const Dolphins = [96,108,89];
+    // const Koalas = [88,91,110];
+  
+
+    // let averageDol = (Dolphins[0]+Dolphins[1]+Dolphins[2])/Dolphins.length;
+    // let averageKoa = (Koalas[0]+Koalas[1]+Koalas[2])/Koalas.length;
+
+    // if(averageDol == averageKoa && (Koalas.some(ele => ele >= 100) || Dolphins.some(ele => ele >= 100) ) )console.log("DRAW");
+    // else if(averageDol > averageKoa && Dolphins.some(ele => ele >= 100))console.log("Dolphins WINS");
+    // else if(averageDol < averageKoa && Dolphins.some(ele => ele >= 100)) console.log("Koalas WINS");
+    // else console.log("No One WINS");
+
+
+
+    //Challenge 4 :
+
+
+    // const tip = [275,40,430];
+
+     
+
+    // if(tip[0] <=300 && tip[0] >= 50) console.log(`The bill was ${tip[0]}, the tip was ${tip[0]*0.15}, and the total value
+    //  ${tip[0]*0.15+tip[0]}`);
+    // else console.log(`The bill was ${tip[0]}, the tip was ${tip[0]*0.2}, and the total value
+    //  ${tip[0]*0.2+tip[0]}`);
+
+
+    // const tipt = tip[0] <=300 && tip[0] >= 50 ? console.log(`The bill was ${tip[0]}, the tip was ${tip[0]*0.15}, and the total value ${tip[0]*0.15+tip[0]}`) : console.log(`The bill was ${tip[0]}, the tip was ${tip[0]*0.2}, and the total value
+    // //  ${tip[0]*0.2+tip[0]}`);
+
+//     JavaScript Fundamentals – Part 2
+
+// Coding Challenge #1
+
+
+const calcuAverage = (score1,score2,score3) => {
+
+return (score1 + score2 + score3 )/3
+
+
+}
+const avgDolhins = calcuAverage(85,54,41);
+const avgKoalas = calcuAverage(23,34,27);
+
+
+
+function checkWinner(avgDolhins,avgKoalas){
+
+
+
+if(avgDolhins >= 2*avgKoalas){
+    console.log("Dolphins WINS")
+}else if(avgKoalas >= 2*avgDolhins){
+    console.log("Koalas WINS")
+}else{
+    console.log("No One WINS")
+}
+
+}
+
+
+checkWinner(avgDolhins,avgKoalas)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
